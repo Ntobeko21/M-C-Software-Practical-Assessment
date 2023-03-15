@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>964</width>
+    <height>622</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0" rowspan="3">
+     <widget class="QFrame" name="frame">
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetDefaultConstraint</enum>
+       </property>
+       <item row="1" column="16">
+        <widget class="QLineEdit" name="boxByte7"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="boxByte0"/>
+       </item>
+       <item row="1" column="12">
+        <widget class="QLineEdit" name="boxByte5"/>
+       </item>
+       <item row="1" column="14">
+        <widget class="QLineEdit" name="boxByte6"/>
+       </item>
+       <item row="7" column="0" colspan="18">
+        <widget class="QTextEdit" name="txtFeed">
+         <property name="lineWrapMode">
+          <enum>QTextEdit::NoWrap</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="15">
+        <widget class="QLabel" name="lblB7">
+         <property name="text">
+          <string>b7:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="6">
+        <widget class="QLineEdit" name="boxByte2"/>
+       </item>
+       <item row="1" column="11">
+        <widget class="QLabel" name="lblB5">
+         <property name="text">
+          <string>b5:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="13">
+        <widget class="QLabel" name="lblB6">
+         <property name="text">
+          <string>b6:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="9">
+        <widget class="QLabel" name="lblB4">
+         <property name="text">
+          <string>b4:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="lblB1">
+         <property name="text">
+          <string>b1:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="10">
+        <widget class="QLineEdit" name="boxByte4"/>
+       </item>
+       <item row="1" column="8">
+        <widget class="QLineEdit" name="boxByte3"/>
+       </item>
+       <item row="0" column="2" colspan="3">
+        <widget class="QLineEdit" name="boxMsgId"/>
+       </item>
+       <item row="1" column="7">
+        <widget class="QLabel" name="lblB3">
+         <property name="text">
+          <string>b3:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="17" rowspan="6">
+        <widget class="QPushButton" name="btnProcess">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>Process</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QLabel" name="lblB2">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;b2:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLineEdit" name="boxCRC"/>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLineEdit" name="boxByte1"/>
+       </item>
+       <item row="8" column="0">
+        <widget class="QPushButton" name="btnClear">
+         <property name="text">
+          <string>Clear</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2" colspan="15">
+        <widget class="QLineEdit" name="boxEasyPaste">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Courier New</family>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>Tab Separated &quot;Message ID&quot;, &quot;b0&quot; .. &quot;b7&quot; &amp; &quot;CRC&quot;</string>
+         </property>
+         <property name="statusTip">
+          <string>(Paste message's from the CAN export examples spreadsheet.)</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="17">
+        <widget class="QPushButton" name="btnClose">
+         <property name="text">
+          <string>Close</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="lblEasyPaste">
+         <property name="text">
+          <string>Easy Paste:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="lblCRC">
+         <property name="text">
+          <string>CRC:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="lblB0">
+         <property name="text">
+          <string>b0:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lblMsgId">
+         <property name="text">
+          <string>Message ID:</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="toolTip">
+    <string>hallo tool tip</string>
+   </property>
+   <property name="statusTip">
+    <string>hallo-status tip</string>
+   </property>
+   <property name="whatsThis">
+    <string>hallo whats this</string>
+   </property>
+   <property name="accessibleName">
+    <string>some name</string>
+   </property>
+   <property name="accessibleDescription">
+    <string>some descripton</string>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>964</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menumenu_1">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpenDatabase"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menumenu_1"/>
+  </widget>
+  <action name="actionOpenDatabase">
+   <property name="text">
+    <string>Open Database</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>boxMsgId</tabstop>
+  <tabstop>boxByte0</tabstop>
+  <tabstop>boxByte1</tabstop>
+  <tabstop>boxByte2</tabstop>
+  <tabstop>boxByte3</tabstop>
+  <tabstop>boxByte4</tabstop>
+  <tabstop>boxByte5</tabstop>
+  <tabstop>boxByte6</tabstop>
+  <tabstop>boxByte7</tabstop>
+  <tabstop>boxCRC</tabstop>
+  <tabstop>btnProcess</tabstop>
+  <tabstop>boxEasyPaste</tabstop>
+  <tabstop>txtFeed</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
