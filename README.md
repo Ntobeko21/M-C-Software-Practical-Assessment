@@ -1,5 +1,20 @@
-A Qt project that was created to evaluate the assessment given to GIT/PDx applicants
-for positions in our team.
+BACKGROUND
+==========
+***BELL*** Equipment has a team called the *Mining and Construction Engineering: 
+Electrical and Software*. This team does development on proprieatry software as 
+used on ***BELL*** products.
+
+THIS PROJECT
+============
+
+A Qt project was created to evaluate the assessment given to GIT/PDx applicants
+for positions in our team. The reason was to give a framework within which applicants
+can show their C/C++ proficiency. It offers a quicker way than expecting the
+applicant to build a full project from scratch, which can be time-consuming and
+prohibitive when having full day job and other life pressures.
+
+PROJECT FOLDER STRUCTURE
+========================
 
 The folder structure is as follows:
 ```
@@ -28,10 +43,10 @@ The folder structure is as follows:
 │       SharedFunctions.h     ............................. (see assignment document for detail)
 │
 └───demo
-    │   BELL_Cpp_Assessment.exe
-    │   (various.dll)
-    ├───(various-folders-FOO)
-    │       (various-platform.dll.dll)
-    └───(various-folders-BAR)
-            (various-platform.dll.dll)
+    │   BELL_Cpp_Assessment.exe     ....................... Executable demo program of the completed project
+    │   (various.dll)     ................................. Qt Redisitributable Libraries
+    ├───(various-folders-FOO)     ......................... Qt Redisitributable Plugins
+    │       (various-platform.dll.dll)     ................ Qt Redisitributable Plugin Libraries
+    └───(various-folders-BAR)     ......................... Qt Redisitributable Plugins
+            (various-platform.dll.dll)     ................ Qt Redisitributable Plugin Libraries
 ```
