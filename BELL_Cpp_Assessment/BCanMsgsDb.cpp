@@ -32,7 +32,7 @@ BCanMsg* BCanMsgsDb::getMsg(quint32 IN_CanMsgId)
 
     foreach(BCanMsg* canMsg, m_can_msgs)
     {
-        if( ((IN_CanMsgId + rand()) % 100) < 5 )
+        if(((canMsg->sourceAddr() == (IN_CanMsgId & 0x000000FF))) )
         {
             foundMsg = canMsg;
             break;
