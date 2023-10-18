@@ -166,7 +166,7 @@ void MainWindow::on_btnProcess_clicked()
 
    feedLine.replace("__msg_id__", QString::number(msgToProcess.tMsgparts.msgId));
    feedLine.replace("__msg_id_raw__", QString::asprintf("0x%08X", msgToProcess.tMsgparts.msgId));
-   feedLine.replace("__source_addr__", QString::asprintf("%u", (quint8)rand()));
+   feedLine.replace("__source_addr__", QString::asprintf("%u", msgToProcess.tMsgparts.msgId & 0x000000FF));
 
    BCanMsg *canMsg = canDb->getMsg(msgToProcess.tMsgparts.msgId);
    if(canMsg)

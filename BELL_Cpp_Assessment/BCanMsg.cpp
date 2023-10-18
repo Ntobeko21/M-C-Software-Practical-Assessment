@@ -69,14 +69,17 @@ double BCanMsg::sigValAt(quint8 IN_sigIdx, quint8 *IN_data)
 {
     Q_ASSERT(IN_sigIdx < m_signals.count());
 
-
-    double engValue = sigRawValAt(IN_sigIdx, IN_data);
-
     BCanSig *pSig = m_signals.at(IN_sigIdx);
-    engValue *= pSig->is_signed ? -1 : 1;
-    engValue *= BOGUS_ENG_VALUE_FACTOR;
 
-    return  engValue;
+    // Get the raw value from the data
+    double rawValue = sigRawValAt(IN_sigIdx, IN_data);
+
+    rawValue *= pSig->is_signed ? -1 : 1;
+
+    // Decoding the engineering signal value from the raw value
+    double engValue = rawValue *(pSig->nominator/pSig->denominator) + pSig->offset;
+
+    return engValue;
 }
 
 
