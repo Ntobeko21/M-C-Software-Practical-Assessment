@@ -1,10 +1,17 @@
 #include "BCanMsgsDb.h"
 #include <QDebug>
 #include "BXmlCanDbReader.h"
+#include <QFileDialog>
+#include <QDir>
 
 BCanMsgsDb::BCanMsgsDb(void)
 {
-    readXml("../BELL_Cpp_Assessment/bellDatabase.xml");
+ // Use the QFileDialog and QDir Libraries to open a dialogue which prompts user to select database and read that file if selected
+    QString dataFilePath = QFileDialog::getOpenFileName(nullptr, "Please open database file ", QDir::homePath(), "XML Files (*.xml)");
+       if (!dataFilePath.isEmpty())
+       {
+           readXml(dataFilePath);
+       }
 }
 
 BCanMsgsDb::~BCanMsgsDb(void){
