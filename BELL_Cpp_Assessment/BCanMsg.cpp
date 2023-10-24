@@ -77,7 +77,7 @@ double BCanMsg::sigValAt(quint8 IN_sigIdx, quint8 *IN_data)
     rawValue *= pSig->is_signed ? -1 : 1;
 
     // Decoding the engineering signal value from the raw value
-    double engValue = rawValue *(pSig->nominator/pSig->denominator) + pSig->offset;
+    double engValue = ((rawValue * pSig->nominator)/pSig->denominator) + pSig->offset;
 
     return engValue;
 }
