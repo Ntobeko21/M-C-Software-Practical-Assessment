@@ -26,7 +26,6 @@ HEADERS += \
     mainwindow.h \
     crc8.h \
     SharedFunctions.h \
-    crc8table.h
 
 OTHER_FILES += \
     bellDatabase.xml
