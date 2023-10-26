@@ -1,0 +1,79 @@
+<?xml version="1.0" standalone="yes"?>
+<BELL_DATABASE version="2.0" exe_version="905.20.0.39" datetime="2022-05-11 14:31">
+	<Message msg_id="{7D85D348-CA18-49A9-BE92-98C923FDC97F}" msg_desc="AMBIENT CONDITIONS_SA33" rate="1000" freshness_time="21000" enabled="0" data_bytes="8" priority="6" pgn="65269" da="0" sa="33" mode="255">
+		<Signal sig_id="{94FA608B-EA86-4BC3-8C72-9FB234EBF98E}" sig_desc="Barometric Pressure" offset="0" nominator="1" denominator="2" signed="0" startbit="0" num_bits="8" send_value="0.00"/>
+		<Signal sig_id="{6763DF35-A098-4645-9C04-008AD3F2CA1C}" sig_desc="Cab Temperature" offset="-273" nominator="1" denominator="32" signed="0" startbit="8" num_bits="16" send_value="0.00"/>
+		<Signal sig_id="{4AE70F50-071A-4346-9511-4A212BB13105}" sig_desc="Ambient Temperature" offset="-273" nominator="1" denominator="32" signed="0" startbit="24" num_bits="16" send_value="0.00"/>
+		<Signal sig_id="{132F73C7-2D8F-47E7-986C-428A1B303079}" sig_desc="Air Inlet Temperature" offset="-40" nominator="1" denominator="1" signed="0" startbit="42" num_bits="8" send_value="0.00"/>
+	</Message>
+	<Message msg_id="{025F67E1-9DA1-478D-B5F7-8A5012541E96}" msg_desc="EEC1" rate="10" freshness_time="21000" enabled="0" data_bytes="8" priority="6" pgn="61444" da="255" sa="0" mode="255">
+		<Signal sig_id="{7D830F0D-53CD-4AE5-8EB0-4AC0A8B6BAB8}" sig_desc="Engine and Retarder Torque Mode" offset="0" nominator="1" denominator="1" signed="0" startbit="0" num_bits="4" send_value="1.00"/>
+		<Signal sig_id="{E897F161-DE19-41C5-BD6F-B59E5ED7E4A5}" sig_desc="Driver Demand Engine Percent Torque" offset="-125" nominator="1" denominator="1" signed="0" startbit="8" num_bits="8" send_value="0.00"/>
+		<Signal sig_id="{7873BBDD-3F4A-47E6-9A5B-6914D17B9E85}" sig_desc="Actual Engine Percentage Torque" offset="-125" nominator="1" denominator="1" signed="0" startbit="16" num_bits="8" send_value="0.00"/>
+		<Signal sig_id="{E182F73C-F8D8-4348-96D0-4B667D92D622}" sig_desc="Engine Speed" offset="0" nominator="1" denominator="8" signed="1" startbit="24" num_bits="16" send_value="0.00"/>
+	</Message>
+	<Message msg_id="{5CBBCB8B-AB67-495E-94FF-CDEC674180BF}" msg_desc="ENGINE FLUID" rate="500" freshness_time="21000" enabled="0" data_bytes="8" priority="6" pgn="65263" da="255" sa="0" mode="255">
+		<Signal sig_id="{5BBCF4C8-0B82-485C-AE1D-E0710398FA8B}" sig_desc="Fuel Delivery Pressure" offset="0" nominator="4" denominator="1" signed="0" startbit="0" num_bits="8" send_value="0.00"/>
+		<Signal sig_id="{2ADAC7B9-BEB3-466B-ADFF-5406F4AE98B8}" sig_desc="Extended crankcase blow-by Pressure" offset="0" nominator="1" denominator="20" signed="0" startbit="8" num_bits="8" send_value="0.00"/>
+		<Signal sig_id="{8796E8ED-D2B6-4C2A-9EB5-0E6227D25E8E}" sig_desc="Engine Oil Level" offset="0" nominator="4" denominator="10" signed="0" startbit="16" num_bits="8" send_value="90.00"/>
+		<Signal sig_id="{B3EA3839-8AB1-4CCB-BCA0-AD30E1347069}" sig_desc="Engine Oil Pressure" offset="0" nominator="4" denominator="1" signed="0" startbit="24" num_bits="8" send_value="500.00"/>
+		<Signal sig_id="{0698B780-15AE-479B-8DC2-070366047503}" sig_desc="Crankcase Pressure" offset="-250" nominator="1" denominator="128" signed="0" startbit="32" num_bits="16" send_value="0.00"/>
+		<Signal sig_id="{C8B6D0CD-CDBE-4E00-8DF8-4269CB8B099F}" sig_desc="Coolant Pressure" offset="0" nominator="2" denominator="1" signed="0" startbit="48" num_bits="8" send_value="0.00"/>
+		<Signal sig_id="{8898A006-6063-45DD-B7EE-CDA39C14236B}" sig_desc="Coolant Level" offset="0" nominator="4" denominator="10" signed="0" startbit="56" num_bits="8" send_value="90.00"/>
+	</Message>
+	<Message msg_id="{1B6388E3-2814-4770-96B8-2F6D4A610947}" msg_desc="ENGINE TEMPERATURE" rate="1000" freshness_time="21000" enabled="0" data_bytes="8" priority="6" pgn="65262" da="255" sa="0" mode="255">
+		<Signal sig_id="{58A22EEE-6861-424E-B669-0247ED893061}" sig_desc="Engine Coolant Temperature" offset="-40" nominator="1" denominator="1" signed="0" startbit="0" num_bits="8" send_value="100.00"/>
+		<Signal sig_id="{87A999D8-60A3-4F35-92DB-81D3632997CE}" sig_desc="Fuel Temperature" offset="-40" nominator="1" denominator="1" signed="0" startbit="8" num_bits="8" send_value="20.00"/>
+		<Signal sig_id="{072CDCEF-22FC-4704-A64B-E2BF98EA921F}" sig_desc="Engine Oil Temperature" offset="-273" nominator="1" denominator="32" signed="0" startbit="16" num_bits="16" send_value="70.00"/>
+		<Signal sig_id="{733C353E-9B7C-4F54-AE4B-F25DD9204AAB}" sig_desc="Turbo Oil Temperature" offset="-273" nominator="1" denominator="32" signed="0" startbit="32" num_bits="16" send_value="0.00"/>
+		<Signal sig_id="{6908B37C-AA97-4FF8-B827-42BF3DEF778D}" sig_desc="Engine Intercooler Temperature" offset="-40" nominator="1" denominator="1" signed="0" startbit="48" num_bits="8" send_value="0.00"/>
+		<Signal sig_id="{0AA7294D-8B45-4F9B-A89B-A315891AE0B1}" sig_desc="Engine Intercooler Thermostat Opening" offset="0" nominator="4" denominator="10" signed="1" startbit="56" num_bits="8" send_value="0.00"/>
+	</Message>
+	<Message msg_id="{9C8BBAC2-1687-4ACC-A7D6-F9B3CA38DBBC}" msg_desc="ETC1" rate="10" freshness_time="21000" enabled="0" data_bytes="8" priority="6" pgn="61442" da="255" sa="3" mode="255">
+		<Signal sig_id="{B373A4EC-6163-441D-B501-0E62191C26F9}" sig_desc="Driveline Engaged" offset="0" nominator="1" denominator="1" signed="0" startbit="0" num_bits="2" send_value="0.00"/>
+		<Signal sig_id="{32145E76-2886-4677-BE22-7F5AD74CA968}" sig_desc="Torque Converter Lockup Engaged" offset="0" nominator="1" denominator="1" signed="0" startbit="2" num_bits="2" send_value="0.00"/>
+		<Signal sig_id="{072E7FC9-44F3-4C8F-9FDD-001F065E6647}" sig_desc="Shift in process" offset="0" nominator="1" denominator="1" signed="0" startbit="4" num_bits="2" send_value="0.00"/>
+		<Signal sig_id="{4C0F6498-57AF-4DA4-B2A6-19F90097BBDB}" sig_desc="Output Shaft Speed" offset="0" nominator="1" denominator="8" signed="0" startbit="8" num_bits="16" send_value="500.00"/>
+		<Signal sig_id="{2827798D-05E3-4D81-A519-CB82D56F92F8}" sig_desc="Input Shaft Speed" offset="0" nominator="1" denominator="8" signed="0" startbit="40" num_bits="16" send_value="0.00"/>
+	</Message>
+	<Message msg_id="{37FE1011-0F5E-4FAC-9AC6-6E27DC3AC2E4}" msg_desc="ETC2" rate="100" freshness_time="21000" enabled="0" data_bytes="8" priority="6" pgn="61445" da="255" sa="3" mode="255">
+		<Signal sig_id="{422AE392-647C-44CA-948A-1C1B889E43A6}" sig_desc="Selected Gear" offset="-125" nominator="1" denominator="1" signed="0" startbit="0" num_bits="8" send_value="0.00"/>
+		<Signal sig_id="{8332A3DD-8FB8-4563-AA1E-0EE64314D510}" sig_desc="Current Gear" offset="-125" nominator="1" denominator="1" signed="0" startbit="24" num_bits="8" send_value="0.00"/>
+	</Message>
+	<Message msg_id="{0329C44D-4F7E-4E26-9337-F86CB05023EF}" msg_desc="FUEL ECONOMY" rate="100" freshness_time="21000" enabled="0" data_bytes="8" priority="6" pgn="65266" da="255" sa="0" mode="255">
+		<Signal sig_id="{694E480B-7527-4872-8275-7B6B4DEDC8F2}" sig_desc="Fuel Rate" offset="0" nominator="1" denominator="20" signed="0" startbit="0" num_bits="16" send_value="20.00"/>
+		<Signal sig_id="{48B32724-8836-479D-8929-BC2315A188F0}" sig_desc="Instantaneous Fuel Economy" offset="0" nominator="1" denominator="512" signed="0" startbit="16" num_bits="16" send_value="0.00"/>
+		<Signal sig_id="{32B2651C-6960-41A8-BD53-0D6F09FB9C14}" sig_desc="Average Fuel Economy" offset="0" nominator="1" denominator="512" signed="0" startbit="32" num_bits="16" send_value="0.00"/>
+		<Signal sig_id="{ECCE4F7F-0E35-4C4F-9175-462F353AE6F4}" sig_desc="Throttle Position" offset="0" nominator="4" denominator="10" signed="0" startbit="48" num_bits="8" send_value="0.00"/>
+	</Message>
+	<Message msg_id="{5F694093-2BFF-4DE3-9EF2-CA77C2059147}" msg_desc="SLOPE FRONT" rate="100" freshness_time="21000" enabled="0" data_bytes="8" priority="6" pgn="61459" da="0" sa="251" mode="255">
+		<Signal sig_id="{388249F3-B22A-44B7-8F85-F080A8874723}" sig_desc="Pitch Angle" offset="-64" nominator="1" denominator="500" signed="0" startbit="0" num_bits="16" send_value="0.00"/>
+		<Signal sig_id="{CB0E845C-D805-4B49-B39A-230DE7B70381}" sig_desc="Roll Angle" offset="-64" nominator="1" denominator="500" signed="0" startbit="16" num_bits="16" send_value="0.00"/>
+		<Signal sig_id="{9AF9B4BE-9FB7-4F45-A3F7-AC7549D6A556}" sig_desc="Pitch Rate" offset="-64" nominator="1" denominator="500" signed="0" startbit="32" num_bits="16" send_value="0.00"/>
+		<Signal sig_id="{3A52BB34-43D1-4190-877A-68801E33AD07}" sig_desc="Pitch Angle Figure of Merit" offset="0" nominator="1" denominator="1" signed="0" startbit="48" num_bits="2" send_value="0.00"/>
+		<Signal sig_id="{08BD7654-F29E-418F-830D-6A88D9A04CDB}" sig_desc="Roll Angle Figure of Merit" offset="0" nominator="1" denominator="1" signed="0" startbit="50" num_bits="2" send_value="0.00"/>
+		<Signal sig_id="{FAFAC0C6-6B38-4109-B5CE-174D2822569D}" sig_desc="Pitch Rate Figure of Merit" offset="0" nominator="1" denominator="1" signed="0" startbit="52" num_bits="2" send_value="0.00"/>
+		<Signal sig_id="{7BD2BF4B-DB3A-49E2-8D29-DF0CE41FC80D}" sig_desc="Pitch and Roll Compensated" offset="0" nominator="1" denominator="1" signed="0" startbit="54" num_bits="2" send_value="0.00"/>
+		<Signal sig_id="{C221CC78-0E38-4F19-912C-01523E8373AB}" sig_desc="Roll and Pitch Measurement Latency" offset="0" nominator="1" denominator="2" signed="0" startbit="56" num_bits="8" send_value="0.00"/>
+	</Message>
+	<Message msg_id="{AB55034D-4C0B-41A7-842C-854676B8A499}" msg_desc="TIME/DATE" rate="1000" freshness_time="21000" enabled="0" data_bytes="8" priority="6" pgn="65254" da="0" sa="251" mode="255">
+		<Signal sig_id="{FBF21E40-E331-4002-91FD-0EA19DE64A83}" sig_desc="Seconds" offset="0" nominator="1" denominator="4" signed="0" startbit="0" num_bits="8" send_value="0.00"/>
+		<Signal sig_id="{D5290372-710E-4891-8B70-CFADF9100A93}" sig_desc="Minutes" offset="0" nominator="1" denominator="1" signed="0" startbit="8" num_bits="8" send_value="0.00"/>
+		<Signal sig_id="{77D3A079-8DF2-4927-8F5A-31FF757182B4}" sig_desc="Hours" offset="0" nominator="1" denominator="1" signed="0" startbit="16" num_bits="8" send_value="0.00"/>
+		<Signal sig_id="{3EB764E6-56AC-4CAD-9538-E01C8A153172}" sig_desc="Month" offset="0" nominator="1" denominator="1" signed="0" startbit="24" num_bits="8" send_value="0.00"/>
+		<Signal sig_id="{179F24B4-64FF-4E50-BAF7-076C1AF30728}" sig_desc="Day" offset="0" nominator="1" denominator="4" signed="0" startbit="32" num_bits="8" send_value="0.00"/>
+		<Signal sig_id="{8AF82897-BB81-4FB7-9F28-1A0247056FC0}" sig_desc="Year" offset="1985" nominator="1" denominator="1" signed="0" startbit="40" num_bits="8" send_value="0.00"/>
+		<Signal sig_id="{25A1C53B-50A9-4A64-9828-95534835DD8A}" sig_desc="Local Minute Offset" offset="0" nominator="1" denominator="1" signed="0" startbit="48" num_bits="8" send_value="0.00"/>
+		<Signal sig_id="{23E16678-94B0-4A25-B3B2-9A2EBF7D387C}" sig_desc="Local Hour Offset" offset="0" nominator="1" denominator="1" signed="0" startbit="56" num_bits="8" send_value="0.00"/>
+	</Message>
+	<Message msg_id="{E49422BD-5675-4F2A-A3AC-F63D6B814B98}" msg_desc="VEHICLE DIRECTION OR SPEED" rate="1000" freshness_time="21000" enabled="0" data_bytes="8" priority="6" pgn="65256" da="0" sa="251" mode="255">
+		<Signal sig_id="{EC0E5F42-8E47-4D7C-B305-A29052D26698}" sig_desc="Compass Bearing" offset="0" nominator="1" denominator="128" signed="0" startbit="0" num_bits="16" send_value="0.00"/>
+		<Signal sig_id="{82455EBF-5B56-4720-A934-FDFB09C411DC}" sig_desc="Navigation vehicle Speed" offset="0" nominator="1" denominator="256" signed="0" startbit="16" num_bits="16" send_value="0.00"/>
+		<Signal sig_id="{52EC77E1-8C6B-4AA0-8D6F-FF4FDCD9FF80}" sig_desc="Pitch" offset="-200" nominator="1" denominator="128" signed="0" startbit="32" num_bits="16" send_value="0.00"/>
+		<Signal sig_id="{4C3FCF76-BDDD-42A1-82AA-8F1C964A2889}" sig_desc="Altitude" offset="-2500" nominator="1" denominator="8" signed="0" startbit="48" num_bits="16" send_value="0.00"/>
+	</Message>
+	<Message msg_id="{FF403201-D0FA-40EC-B25A-8F92C6B08703}" msg_desc="VEHICLE POSITION" rate="1000" freshness_time="21000" enabled="0" data_bytes="8" priority="6" pgn="65267" da="0" sa="251" mode="255">
+		<Signal sig_id="{50CA6745-D048-49FD-A658-6248FFBC325C}" sig_desc="Latitude" offset="-210" nominator="1" denominator="10000000" signed="0" startbit="0" num_bits="32" send_value="0.00"/>
+		<Signal sig_id="{FC16A717-990A-495B-B8A3-857F84759D16}" sig_desc="Longitude" offset="-210" nominator="1" denominator="10000000" signed="0" startbit="32" num_bits="32" send_value="0.00"/>
+	</Message>
+</BELL_DATABASE>
