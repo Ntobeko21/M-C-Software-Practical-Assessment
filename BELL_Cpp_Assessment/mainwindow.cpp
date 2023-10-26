@@ -6,7 +6,7 @@
 #include <QDebug>
 #include <QDateTime>
 #include <QRegExp>
-#include <crc8.h>
+#include "crc8.h"
 
 #define TESTMSG1_id  "217056256"
 #define TESTMSG1_b0  "240"
@@ -134,7 +134,8 @@ void MainWindow::on_btnProcess_clicked()
    QString feedLine;
    feedLine += FEED_HEADER;
 
-
+   uCanMsgRaw ttest;
+   ttest.rawBytes;
 
    feedLine += "\nData: [";
    for(quint8 byteIdx = 0; byteIdx < sizeof(msgToProcess.tMsgparts.dataBytes); byteIdx++)
@@ -146,7 +147,8 @@ void MainWindow::on_btnProcess_clicked()
    feedLine += "CRC: [";
    feedLine += QString::asprintf("%02X", dataCrc);
    feedLine += "] Result: [__crc_result__]\n";
-   quint8 calculatedCrc = CalcCRC8(msgToProcess.tMsgparts.dataBytes, sizeof(msgToProcess.tMsgparts.dataBytes));
+
+   quint8 calculatedCrc = CalcCRC8(msgToProcess.rawBytes, sizeof(msgToProcess.rawBytes));
 
    QString crcResult = "✔ pass";
    if(calculatedCrc != dataCrc)
